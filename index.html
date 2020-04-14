@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amicorum RolePlay</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="popup registration-popup">
+            <div class="form">
+                <div class="form__left">
+                    <img src="img/reg_bg2.jpg" alt="фон" class="form__img" draggable="false" />
+                    <div class="form__overlap"></div>
+                </div>
+                <div class="form__right">
+                    <div class="form__switcher">
+                        <div class="form__title">РЕГИСТРАЦИЯ</div>
+                        <div class="form__title">АВТОРИЗАЦИЯ</div>
+                        <div class="form__switch"></div>
+                    </div>
+                    <form action="" name="registration">
+                        <div class="form__item">
+                            <input type="email" id="email_1" class="form__input" required />
+                            <label for="email_1" class="form__label">Введите вашу почту:</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="password" id="pas_1" class="form__input" required />
+                            <label for="pas_1" class="form__label">Введите пароль:</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="password" id="pas_2" class="form__input" required />
+                            <label for="pas_2" class="form__label">Повторите пароль:</label>
+                        </div>
+                        <input type="submit" class="btn form__btn" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+                        <div class="form__agreement">
+                            <input type="checkbox" class="form__check" required checked id="check_1">
+                            <label for="check_1" class="form__label--last">Даю согласие на обработку моих данных</label>
+                        </div>
+                    </form>
+                    <form action="" name="authorization" class="hide">
+                        <div class="form__item">
+                            <input type="email" id="email_2" class="form__input" required />
+                            <label for="email_2" class="form__label">Введите вашу почту:</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="password" id="pas_3" class="form__input" required />
+                            <label for="pas_3" class="form__label">Введите пароль:</label>
+                        </div>
+                        <input type="submit" class="btn form__btn" value="АВТОРИЗОВАТЬСЯ">
+                        <div class="form__agreement">
+                            <input type="checkbox" class="form__check" required checked id="check_2">
+                            <label for="check_2" class="form__label--last">Даю согласие на обработку моих данных</label>
+                        </div>
+                    </form>
+                    <a href="" class="form__political">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <img src="img/man1.png" alt="персонаж"  class="decorate-img decorate-img-1" draggable="false" />
+            <img src="img/man2.png" alt="персонаж"  class="decorate-img decorate-img-2" draggable="false" />
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
