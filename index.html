@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <section class="popup registration-popup">
+        <section class="popup registration-popup hide">
             <div class="form">
                 <div class="form__left">
                     <img src="img/reg_bg2.jpg" alt="фон" class="form__img" draggable="false" />
@@ -26,7 +26,7 @@
                         <div class="form__title">АВТОРИЗАЦИЯ</div>
                         <div class="form__switch"></div>
                     </div>
-                    <form action="" name="registration">
+                    <form action="" name="registration" class="reg-form">
                         <div class="form__item">
                             <input type="email" id="email_1" class="form__input" required />
                             <label for="email_1" class="form__label">Введите вашу почту:</label>
@@ -45,7 +45,7 @@
                             <label for="check_1" class="form__label--last">Даю согласие на обработку моих данных</label>
                         </div>
                     </form>
-                    <form action="" name="authorization" class="hide">
+                    <form action="" name="authorization" class="hide reg-form">
                         <div class="form__item">
                             <input type="email" id="email_2" class="form__input" required />
                             <label for="email_2" class="form__label">Введите вашу почту:</label>
@@ -63,9 +63,80 @@
                     <a href="" class="form__political">Политика конфиденциальности</a>
                 </div>
             </div>
-            <img src="img/man1.png" alt="персонаж"  class="decorate-img decorate-img-1" draggable="false" />
-            <img src="img/man2.png" alt="персонаж"  class="decorate-img decorate-img-2" draggable="false" />
+            <img src="img/people/man1.png" alt="персонаж" class="decorate-img decorate-img-1" draggable="false" />
+            <img src="img/people/man2.png" alt="персонаж" class="decorate-img decorate-img-2" draggable="false" />
         </section>
+        <main>
+            <section class="characters">
+                <div class="wrap">
+                    <div class="characters__block">
+                        <div class="characters__item">
+                            <div class="characters__top">
+                                <p class="characters__lvl">0lvl</p>
+                                <p class="characters__money">0$</p>
+                            </div>
+                            <div class="characters__avatar">
+                                <div class="characters__container">
+                                    <div class="characters__icon">
+                                        <img src="img/icons/user.svg" class="characters__img" alt="аватарка"
+                                            draggable="false" />
+                                    </div>
+                                    <div class="characters__indicator" title="Не в сети"></div>
+                                </div>
+                                <h3 class="characters__name">ПУСТО</h3>
+                            </div>
+                            <a href="" class="btn characters__btn">СОЗДАТЬ</a>
+                        </div>
+                        <div class="characters__item mobile-card">
+                            <div class="characters__top">
+                                <p class="characters__lvl">0lvl</p>
+                                <p class="characters__money">0$</p>
+                            </div>
+                            <div class="characters__avatar">
+                                <div class="characters__container">
+                                    <div class="characters__icon">
+                                        <img src="img/icons/user.svg" class="characters__img" alt="аватарка"
+                                            draggable="false" />
+                                    </div>
+                                    <div class="characters__indicator" title="Не в сети"></div>
+                                </div>
+                                <h3 class="characters__name">ПУСТО</h3>
+                            </div>
+                            <a href="" class="btn characters__btn">СОЗДАТЬ</a>
+                        </div>
+                        <div class="characters__item mobile-card">
+                            <div class="characters__top">
+                                <p class="characters__lvl">0lvl</p>
+                                <p class="characters__money">0$</p>
+                            </div>
+                            <div class="characters__avatar">
+                                <div class="characters__container">
+                                    <div class="characters__icon">
+                                        <img src="img/icons/user.svg" class="characters__img" alt="аватарка"
+                                            draggable="false" />
+                                    </div>
+                                    <div class="characters__indicator" title="Не в сети"></div>
+                                </div>
+                                <h3 class="characters__name">ПУСТО</h3>
+                            </div>
+                            <a href="" class="btn characters__btn">СОЗДАТЬ</a>
+                        </div>
+                        <div class="characters__dots">
+                            <a href="" class="characters__dot active-dot"></a>
+                            <a href="" class="characters__dot"></a>
+                            <a href="" class="characters__dot"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="characters__decorate decorate-1"></div>
+                <div class="characters__decorate decorate-3">
+                    <div class="circle"></div>
+                </div>
+                <div class="characters__decorate decorate-2">
+                    <img src="img/people/man3.png" alt="персонаж" draggable="false"/>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="js/main.js"></script>
